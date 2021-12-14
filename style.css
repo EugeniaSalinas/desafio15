@@ -1,0 +1,248 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/*Regla font-face*/
+@font-face {
+    font-family: 'Afterglow';
+    src: url('tipos/Afterglow/Afterglow-Regular.ttf');
+}
+@font-face {
+    font-family: 'Gotham_book';
+    src: url('tipos/Gotham/Gotham-Font/GothamBook.ttf');
+}
+@font-face {
+    font-family: 'gotham_bold';
+    src: url('tipos/Gotham/Gotham-Font/Gotham-Bold.otf');
+}
+
+/*Menu*/
+nav{
+   width: 100%;
+   margin: 10px auto;
+   background-color: #FFF;
+}
+
+header nav div{
+    display: flex;
+   flex-direction: row;
+   justify-content:end;
+}
+
+
+header nav div ul li a {
+   color: #90384E;
+   list-style-type: none;
+   text-decoration: none;
+   font-family: 'Gotham_book';
+   display: flex;
+   
+ 
+}
+
+.menu > li{
+   text-transform:uppercase; /*Esta todo en mayusculas*/
+   padding: 20px 40px;
+   display: inline-block;
+   
+
+   
+}
+
+.menu > li a:hover{
+   font-family: 'gotham_bold';
+   color: #9e384e;
+    
+}
+.menu > li:hover {
+  font-family: 'gotham_bold'; 
+  transition: all 1,5s;
+}
+/*FINAL MENU*/
+
+/*ICONOS REPRESENTATIVOS*/
+.contieneiconos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 50px;
+    
+}
+.columnasprincipio{
+    width: 250px;
+    text-align: center;    
+}
+
+.textocolumnas{
+    padding: 20px 0;
+}
+/*FIN ICONOS REPRESENTATIVOS*/
+
+/*ANIMACION*/
+.animate__animated.animate__bounceInRight{
+    --animate-duration: 5s;
+}
+
+/*NOSOTROS CON GRIDS*/
+.titulo{
+    font-size: 80px;
+    font-family: 'Afterglow';
+    color: #90384E;
+    text-align: left;
+    margin-top: 50px;
+    line-height: 70px;
+}
+
+/*GRIDS*/
+.grid-containerr {
+    display: grid;
+    grid-template-rows: 50px 200px 200px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-row-gap: 10px;
+    grid-column-gap: 15px;
+    margin-top: 100px;
+}
+
+.grid-item1 {
+    grid-column-start: 1;
+    grid-column-end:6;
+    
+}
+
+.grid-item2{
+    grid-column-start:8;
+    grid-column-end:12;
+    grid-row-start:1;
+}
+
+.grid-item3{
+    grid-column-start: 8;
+    grid-column-end: 11;
+    grid-row-start: 3;
+    font-family: 'gotham_book';
+
+}
+/*FIN NOSOTROS Y GRID*/
+
+/*INICIO FOOTER*/
+footer {
+    padding-top: 30px;
+    margin-top: 200px;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to top, #491224, #7A1C38);
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    align-items: center;
+}
+
+.infoabajo{
+    color: #C6C4C1;
+    font-family: 'Gotham_book';
+    line-height: 15px; /*interlineado*/
+    text-align: center;
+
+}
+
+@media screen and (max-width: 768px) {
+    footer { 
+        flex-direction: column;
+    }
+}
+/*FIN DE FOOTER*/
+
+
+/*PAGINA PRODUCTOS*/
+
+.seccionprod{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0 auto;
+
+}
+
+.cajitaprod{
+    border: 1px solid #C6C4C1;
+    width: 300px;
+    height: 400px;
+    margin: 20px 0;
+    flex-wrap: wrap;
+}
+.imagenprod{
+    padding: 10px;
+}
+
+.imagenprod:hover{
+    opacity: 0.5;
+    transition: all 0.8s;
+}
+.textoprod{
+    text-align: center;
+    font-size: 20px;
+}
+
+
+/*PAGINA CONTACTO*/
+
+.subtitulo {
+    font-size: 30px;
+    font-family:'Roboto', sans-serif;
+    color: #7A1C38;
+    text-align: center;
+}
+
+/*PAGINA CONTACTO*/
+.subtitulo {
+    font-size: 30px;
+    font-family:'gotham_bold';
+    color: #7A1C38;
+    text-align: center;
+  }
+  
+  /*FORMULARIO*/
+  .formulario {
+    width: 400px;
+    background-color: #7A1C38;
+    padding: 30px;
+    margin: auto;
+    margin-top: 50px;
+    border-radius: 4px;
+  }
+  .formulario h4 {
+    color: #ffffff;
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+  .formulario input {
+    width: 100%;
+    background-color: #7A1C38;
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    border: 1px solid #fff;
+  }
+  .formulario input:hover {
+    background-color: #d46184;
+    color: #7A1C38;
+    transition: 0.8s;
+  }
+  .formulario .boton_enviar {
+    width: 100%;
+    border: none;
+    background-color: #d46184;
+  }
+  .formulario .boton_enviar:hover {
+    background-color: #e984a2;
+  }
+  
+  /*FIN FORMULARIO*/
+  
